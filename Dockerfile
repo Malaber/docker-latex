@@ -1,7 +1,7 @@
 FROM debian:buster
 
 RUN apt-get update && \
-    apt-get install -y texlive-full python3-pygments make && \
+    apt-get install -y texlive-full python3-pygments make inotify-tools && \
     apt-get purge -y *-doc && \
     apt-get clean -y && \
     rm -rf /var/lib/apt/lists/*i
