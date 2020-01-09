@@ -7,8 +7,6 @@ before_script:
 docker:
   image: docker
   stage: docker
-  only:
-    - schedules
   services:
     - docker:dind
   script:
